@@ -1,0 +1,95 @@
+[
+	{
+	"type": "MONSTER",
+	"id": "mon_xenomorph_drone",
+	"name": "xenomorph drone",
+	"description": "A towering, sleek black biomechanical being of death, their main responsibility is the subduing and capture of its prey.",
+	"default_faction": "xenomorph",
+	"species": ["UNKNOWN"],
+	"volume": "90000ml",
+	"weight": 125000,
+	"hp":170,
+	"speed":120,
+	"material":[ "acidchitin" ],
+	"symbol": "X",
+	"color": "dark_gray",
+	"aggression": 100,
+	"morale": 100,
+	"melee_skill": 4,
+	"melee_dice": 3,
+	"melee_dice_sides": 6,
+	"melee_cut": 3,
+	"dodge": 3,
+	"vision_night": 3,
+	"special_attacks": [
+	[ "ACID", 100],
+	[ "GRAB", 20 ],
+	{ "type": "leap", "cooldown": 10, "max_range": 4},
+	[ "SHRIEK", 40 ]
+	],
+	"special_when_hit": [ "ACIDSPLASH", 20 ],
+	"flags": [
+		"SEES",
+		"HEARS",
+		"SMELLS",
+		"WARM",
+		"BASHES",
+		"GROUP_BASH",
+		"ACIDPROOF",
+		"ACID_BLOOD",
+		"NO_BREATHE",
+		"PUSH_MON",
+		"SWARMS",
+		"SWIMS"
+	]
+	
+	},
+	
+	{
+	"type": "MONSTER",
+	"id": "mon_xenomorph_warrior",
+	"name": "xenomorph warrior",
+	"description": "A towering, sleek black biomechanical being of death, they kill anything other than their own kin.",
+	"default_faction": "xenomorph",
+	"species": ["UNKNOWN"],
+	"volume": "100000ml",
+	"weight": 150000,
+	"hp":300,
+	"speed":135,
+	"material":[ "acidchitin" ],
+	"symbol": "X",
+	"color": "black",
+	"aggression": 100,
+	"morale": 100,
+	"melee_skill": 7,
+	"melee_dice": 6,
+	"melee_dice_sides": 10,
+	"melee_cut": 5,
+	"dodge": 6,
+	"vision_night": 3,
+	"special_attacks": [
+	[ "ACID", 100],
+	[ "GRAB", 20 ],
+	{ "type": "leap", "cooldown": 10, "max_range": 4},
+	[ "scratch", 3 ],
+	[ "impale", 5 ],
+	[ "SHRIEK", 40 ]
+	],
+	"special_when_hit": [ "ACIDSPLASH", 20 ],
+	"flags": [
+		"SEES",
+		"HEARS",
+		"SMELLS",
+		"WARM",
+		"BASHES",
+		"GROUP_BASH",
+		"ACIDPROOF",
+		"ACID_BLOOD",
+		"NO_BREATHE",
+		"PUSH_MON",
+		"SWARMS",
+		"SWIMS"
+	]
+	
+	}
+]
